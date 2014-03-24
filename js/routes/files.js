@@ -1,10 +1,10 @@
 App.FilesRoute = Ember.Route.extend({
     allowFileDrop: true,
-    
+
     model: function() {
         return [];
     },
-    
+
     actions: {
         filesDropped: function(files) {
             var model = this.controller.get('model');
